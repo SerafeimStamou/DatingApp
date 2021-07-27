@@ -14,6 +14,7 @@ import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './_modules/shared.module';
 
 
 @NgModule({
@@ -33,10 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     NgbModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot({
-      positionClass:'toast-bottom-right'
-    })
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
